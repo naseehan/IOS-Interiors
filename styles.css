@@ -1,0 +1,71 @@
+/* "text-[52px] font-[Poppins] leading-[65px] text-[#848385] font-bold" */
+
+.custom-h1{
+    font-size: 52px;
+    font-family: 'poppins';
+    line-height: 65px;
+    font-weight: bold;
+}
+.custom-ul {
+    list-style: none; /* Remove default bullets */
+    padding: 0;
+    display: grid;
+  }
+  
+  .custom-ul li {
+    position: relative;
+    padding-left: 20px; /* Space for the custom bullet */
+  }
+.custom-ul li::before {
+    content: ""; 
+    width: 10px;
+    height: 10px;
+    border: 2px solid #FFE6D0; /* Orange border */
+    border-radius: 50%; /* Makes it a circle */
+    position: absolute;
+    left: 0;
+    top: 5px;
+  }
+  .custom-p{
+    font-family: "Urbanist", serif;
+    font-weight: 500;
+    font-size: 17px;
+    color: #60697B;
+  }
+  .custom-s-heading{
+    font-family: "Montserrat", serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #343F52;
+  }
+  .home-image-overlay {
+    height: 100%;
+    width: 100%;
+    background: #d6d6d680;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    backdrop-filter: blur(3px);
+}
+
+
+/* what we do component*/
+@media (max-width: 1200px){
+.we-do{
+  display: grid;
+  height: auto;
+}
+.we-do div{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.we-do div img{
+  width: 20rem;
+  height: 20rem;
+  position: static;
+}
+}
